@@ -1,3 +1,11 @@
+/*
+ * Copyright (c) 2012 Yamitzky, http://yamitzky.com/
+ * The MIT License
+ *
+ * Derived From jquery.qrcode.js
+ * Copyright (c) 2011 Jerome Etienne, http://jetienne.com
+ * The MIT License
+ */
 HTMLElement.__proto__.qrcode = function(options) {
   // if options is string, 
   if( typeof options === 'string' ){
