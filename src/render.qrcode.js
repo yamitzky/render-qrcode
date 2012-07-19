@@ -72,15 +72,14 @@ HTMLElement.__proto__.qrcode = function(options) {
 
     // draw in the table
     for(var row = 0; row < qrcode.getModuleCount(); row++ ){
-      var $row = $('<tr></tr>').css('height', tileH+"px").appendTo($table);
       var _row = document.createElement('tr');
       _row.style.height = tileH + "px";
       table.appendChild(_row);
       
       for(var col = 0; col < qrcode.getModuleCount(); col++ ){
         var td = document.createElement('td');
-        td.width = tileW+"px";
-        td.backgroundColor = qrcode.isDark(row, col) ? options.foreground : options.background
+        td.style.width = tileW+"px";
+        td.style.backgroundColor = qrcode.isDark(row, col) ? options.foreground : options.background
         _row.appendChild(td);
       }	
     }
